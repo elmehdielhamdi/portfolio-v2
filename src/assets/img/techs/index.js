@@ -1,0 +1,10 @@
+export { default as html } from "./html.webp";
+export { default as css } from "./css.webp";
+export { default as javascript } from "./javascript.webp";
+export { default as bootstrap } from "./bootstrap.webp";
+export { default as tailwind } from "./tailwind.webp";
+export { default as sass } from "./sass.webp";
+export { default as node } from "./node.webp";
+export { default as react } from "./react.webp";
+export { default as redux } from "./redux.webp";
+export { default as git } from "./git.webp";

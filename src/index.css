@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  a {
+    @apply text-gray-500 hover:cursor-pointer hover:text-primary transition;
+  }
+
+  section {
+    @apply py-20;
+  }
+
+  .btn {
+    @apply border-transparent rounded-md shadow-sm text-white bg-primary hover:cursor-pointer hover:bg-blue-600 focus:bg-blue-800 w-fit inline-flex items-center justify-center transition;
+  }
+
+  .btn[disabled="disabled"],
+  .btn:disabled {
+    @apply bg-blue-300 hover:cursor-wait;
+  }
+
+  .input {
+    @apply w-full rounded-md py-3 px-4 text-base border border-stone-200 outline-none focus-visible:shadow-none focus:border-primary;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  width: 7px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: solid 4px #222e3c;
+  border-radius: 0;
+  background: rgba(144, 150, 157, 0.1);
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background: #90969d;
+  transition: background 0.5s ease-in-out;
+}
+
+.photo {
+  @apply bg-primary relative overflow-hidden;
+  height: 300px;
+  width: 300px;
+  border-radius: 30% 50% 20% 40%;
+  animation: blob 15s ease-in-out infinite both alternate;
+}
+
+.photo img {
+  @apply inline-block absolute bottom-0 right-0 left-0 my-0 mx-auto;
+  width: 210px;
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+  }
+  20% {
+    border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+  }
+  40% {
+    border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%;
+  }
+  60% {
+    border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%;
+  }
+}
+
+@import "./assets/css/slick.min.css";
