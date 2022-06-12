@@ -30,7 +30,7 @@ export default function Contact() {
         }),
       {
         loading: "Sending...",
-        success: <b>Message send!</b>,
+        success: <b>Message sent!</b>,
         error: <b>Message not send.</b>,
       }
     );
