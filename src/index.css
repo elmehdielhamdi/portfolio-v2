@@ -4,7 +4,7 @@
 
 @layer components {
   a {
-    @apply text-gray-500 hover:cursor-pointer hover:text-primary transition;
+    @apply text-gray-500 hover:cursor-pointer transition;
   }
 
   section {

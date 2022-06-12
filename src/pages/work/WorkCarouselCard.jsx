@@ -9,7 +9,7 @@ export default function WorkCarouselCard({ work }) {
         alt=""
         className="inset-0 md:h-[310px] lg:h-[340px] xl:h-[370px] "
       />
-      <div className="backdrop-blur-[2px] absolute top-0 left-0 bottom-0 right-0 opacity-0 transform duration-200 ease-out group-hover:opacity-100">
+      <div className="absolute top-0 left-0 bottom-0 right-0 opacity-0 transform duration-200 ease-out group-hover:opacity-100">
         <div className="flex flex-col items-start min-w-[380px] min-h-[200px] absolute top-2 left-2 p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md transform duration-200 ease-out opacity-0 -translate-x-12 -translate-y-12 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0">
           <h1 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
             {work.title}
