@@ -5,16 +5,16 @@ import WorkSmallCard from "./WorkSmallCard";
 
 const works = [
   {
-    image: images.cssGenerator,
-    title: "CSS Generator",
-    technologies: ["React", "Bootstrap", "Redux-Toolkit"],
-    link: "https://cssgenerator.elmehdielhamdi.com",
-  },
-  {
     image: images.weather,
     title: "Weather App",
     technologies: ["React", "Tailwind", "openweathermap"],
     link: "https://weather.elmehdielhamdi.com",
+  },
+  {
+    image: images.cssGenerator,
+    title: "CSS Generator",
+    technologies: ["React", "Bootstrap", "Redux-Toolkit"],
+    link: "https://cssgenerator.elmehdielhamdi.com",
   },
   // {
   //   image: images.portfolioV1,
