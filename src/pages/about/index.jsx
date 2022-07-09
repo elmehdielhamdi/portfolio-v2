@@ -11,8 +11,8 @@ export default function About() {
             <iframe
               src="https://my.spline.design/myrobotocopy-2209b15608831297e230a2973b010ea9/"
               frameBorder="0"
-              width="100%"
-              height="100%"
+              width="384px"
+              height="384px"
               title="Robot"
             ></iframe>
           </div>

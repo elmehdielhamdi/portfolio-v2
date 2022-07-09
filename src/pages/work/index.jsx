@@ -11,11 +11,17 @@ const works = [
     link: "https://cssgenerator.elmehdielhamdi.com",
   },
   {
-    image: images.portfolioV1,
-    title: "Portfolio V1",
-    technologies: ["React"],
-    link: "https://portfolio-v1.elmehdielhamdi.com",
+    image: images.weather,
+    title: "Weather App",
+    technologies: ["React", "Tailwind", "openweathermap"],
+    link: "https://weather.elmehdielhamdi.com",
   },
+  // {
+  //   image: images.portfolioV1,
+  //   title: "Portfolio V1",
+  //   technologies: ["React"],
+  //   link: "https://portfolio-v1.elmehdielhamdi.com",
+  // },
   {
     image: images.robot,
     title: "Robot",
@@ -46,8 +52,7 @@ export default function Work() {
       <div className="container mb-14">
         <h1 className="font-black sm:text-6xl text-4xl mb-6">Recent Work</h1>
         <p className="mb-10 text-xl sm:text-2xl font-light text-gray-600 text-left">
-          Here are a few design projects I've worked on recently. Want to see
-          more?{" "}
+          Here are a few design projects I've worked on recently. Want to see more?{" "}
           <a href="#contact" className="text-primary font-semibold">
             Email me
           </a>
