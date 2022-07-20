@@ -2,20 +2,19 @@ import contact from "../../assets/img/contact.webp";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { validate } from "email-validator";
-import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+
+    formState: { errors, isSubmitting },
     reset,
   } = useForm();
-  const [sending, setSending] = useState(false);
-  const [showConfirmation, setShowConfirmation] = useState(false);
+  // const [sending, setSending] = useState(false);
+  // const [showConfirmation, setShowConfirmation] = useState(false);
   const onSubmit = () => {
-    setSending(true);
     toast.promise(
       emailjs
         .sendForm(
@@ -25,7 +24,6 @@ export default function Contact() {
           process.env.REACT_APP_EMAIL_PUBLIC_KEY
         )
         .then(() => {
-          setSending(false);
           reset();
         }),
       {
@@ -40,17 +38,9 @@ export default function Contact() {
       <div className="container">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-20">
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0 text-center lg:text-left">
-            <span className="block mb-4 text-base text-primary font-semibold">
-              Contact Me
-            </span>
-            <h2 className="text-dark mb-6 uppercase font-bold text-4xl">
-              I'm open to work !
-            </h2>
-            <img
-              src={contact}
-              alt=""
-              className="w-72 sm:w-96 mx-auto lg:mx-0"
-            />
+            <span className="block mb-4 text-base text-primary font-semibold">Contact Me</span>
+            <h2 className="text-dark mb-6 uppercase font-bold text-4xl">I'm open to work !</h2>
+            <img src={contact} alt="" className="w-72 sm:w-96 mx-auto lg:mx-0" />
           </div>
           <div className="w-full lg:w-1/2 xl:w-5/12">
             <div className="bg-white relative rounded-lg py-8 px-4 sm:p-12 shadow-lg">
@@ -119,11 +109,7 @@ export default function Contact() {
                   )}
                 </div>
                 <div>
-                  <button
-                    disabled={sending}
-                    type="submit"
-                    className="btn w-full p-3"
-                  >
+                  <button disabled={isSubmitting} type="submit" className="btn w-full p-3">
                     Send Message
                   </button>
                 </div>
