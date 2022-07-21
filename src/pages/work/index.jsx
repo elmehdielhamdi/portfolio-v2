@@ -26,7 +26,7 @@ const works = [
   {
     image: images.portfolioV2,
     title: "Portfolio",
-    technologies: ["React", "Tailwind CSS", "Spline.design"],
+    technologies: ["React", "Tailwind CSS", "Spline.design", "i18next"],
     link: "https://elmehdielhamdi.com",
   },
 ];
