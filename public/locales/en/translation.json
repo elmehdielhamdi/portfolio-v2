@@ -1,0 +1,99 @@
+{
+  "navbar": {
+    "home": "home",
+    "about": "about",
+    "career": "career",
+    "work": "work",
+    "contact": "contact"
+  },
+  "home": {
+    "title": "Front-End Web Developer",
+    "subtitle": "Websites should look good from the inside and out !"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph": "I'm a front-end web developer, mastering HTML, CSS and Javascript, as well as than modern libraries and frameworks, especially Bootstrap and React, but still exploring other technologies and frameworks that catch my interest! <br /> If you're looking for a developer to add to your team, I'd love to hear from you!"
+  },
+  "work": {
+    "title": "Recent Work",
+    "subtitle": "Here are a few projects I've worked on recently. Want to see more?",
+    "subtitle-link": "Email me",
+    "button": "Visit",
+    "works": ["Weather App", "CSS Generator", "Robot", "Portfolio"]
+  },
+  "career": {
+    "title": "Career",
+    "tabs": { "education": "Education", "work": "Work" },
+    "education": [
+      {
+        "title": "IT Learning",
+        "subtitle": "Casablanca",
+        "tag": "2021 - Present",
+        "paragraph": "Professional University Master's Degree in Computer Science Applied to Business Administration"
+      },
+      {
+        "title": "Higher School Of Technology",
+        "subtitle": "Casablanca",
+        "tag": "2020 - 2021",
+        "paragraph": "Professional License in Software Engineering and Advanced Administration of Computer Systems and Networks"
+      },
+      {
+        "title": "Higher School Of Technology",
+        "subtitle": "Casablanca",
+        "tag": "2018 - 2020",
+        "paragraph": "University Diploma of Technology in Computer Engineering"
+      },
+      {
+        "title": "High School Ben M'Sik",
+        "subtitle": "Casablanca",
+        "tag": "2017 - 2018",
+        "paragraph": "International Baccalaureate Mathematics A - French Option"
+      }
+    ],
+    "work": [
+      {
+        "title": "Laboratoire RITM",
+        "subtitle": "Internship",
+        "tag": "May 2021 - 3 Months",
+        "paragraph": "Registration website for professional license at ESTC.",
+        "tech": "Technologies: Django – Django Rest Framework – Python – React – Redux"
+      },
+      {
+        "title": "Cabilux",
+        "subtitle": "Internship",
+        "tag": "April 2020 - 3 Months",
+        "paragraph": "Resource management application.",
+        "tech": "Technologies: Firebase – NodeJS – ExpressJS – Electron – React – Bootstrap – Redux"
+      },
+      {
+        "title": "Wikreate",
+        "subtitle": "Internship",
+        "tag": "June 2019 - 2 Months",
+        "paragraph": "News and content sharing website.",
+        "tech": "Technologies: Wordpress – PHP – Bootstrap"
+      }
+    ]
+  },
+  "contact": {
+    "title": "I'M OPEN TO WORK !",
+    "subtitle": "Contact Me",
+    "form": {
+      "name": {
+        "placeholder": "Your Name",
+        "required": "This field is required",
+        "maxLength": "30 characters max"
+      },
+      "email": {
+        "placeholder": "Your Email",
+        "required": "This field is required",
+        "validate": "Invalid email"
+      },
+      "message": {
+        "placeholder": "Your Message",
+        "required": "This field is required",
+        "maxLength": "1000 characters max"
+      },
+      "button": "Send Message"
+    }
+  }
+}

@@ -3,8 +3,10 @@ import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { validate } from "email-validator";
 import toast, { Toaster } from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -12,8 +14,6 @@ export default function Contact() {
     formState: { errors, isSubmitting },
     reset,
   } = useForm();
-  // const [sending, setSending] = useState(false);
-  // const [showConfirmation, setShowConfirmation] = useState(false);
   const onSubmit = () => {
     toast.promise(
       emailjs
@@ -36,10 +36,12 @@ export default function Contact() {
   return (
     <section className="relative min-h-screen flex items-center">
       <div className="container">
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-20">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-6 lg:gap-20">
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0 text-center lg:text-left">
-            <span className="block mb-4 text-base text-primary font-semibold">Contact Me</span>
-            <h2 className="text-dark mb-6 uppercase font-bold text-4xl">I'm open to work !</h2>
+            <span className="block mb-4 text-base text-primary font-semibold">
+              {t("contact.subtitle")}
+            </span>
+            <h2 className="text-dark mb-6 uppercase font-bold text-4xl">{t("contact.title")}</h2>
             <img src={contact} alt="" className="w-72 sm:w-96 mx-auto lg:mx-0" />
           </div>
           <div className="w-full lg:w-1/2 xl:w-5/12">
@@ -48,69 +50,51 @@ export default function Contact() {
                 <div className="mb-6 relative">
                   <input
                     type="text"
-                    {...register("name", { required: true, maxLength: 30 })}
-                    placeholder="Your Name"
+                    {...register("name", {
+                      required: t("contact.form.name.required"),
+                      maxLength: { value: 30, message: t("contact.form.name.maxLength") },
+                    })}
+                    placeholder={t("contact.form.name.placeholder")}
                     maxLength={30}
                     className="input"
                   />
-                  {errors.name?.type === "required" && (
-                    <span className="absolute -bottom-5 left-0 w-full text-sm text-red-600">
-                      This field is required
-                    </span>
-                  )}
-                  {errors.name?.type === "maxLength" && (
-                    <span className="absolute -bottom-5 left-0 w-full text-sm text-red-600">
-                      30 characters max
-                    </span>
-                  )}
+                  <span className="absolute -bottom-5 left-0 w-full text-sm text-red-600">
+                    {errors.name && errors.name.message}
+                  </span>
                 </div>
                 <div className="mb-6 relative">
                   <input
                     type="email"
                     {...register("email", {
-                      required: true,
-                      validate: (value) => validate(value),
+                      required: t("contact.form.email.required"),
+                      validate: (value) => validate(value) || t("contact.form.email.validate"),
                     })}
-                    placeholder="Your Email"
+                    placeholder={t("contact.form.email.placeholder")}
                     className="input"
                   />
-                  {errors.email?.type === "required" && (
-                    <span className="absolute -bottom-5 left-0 w-full text-sm text-red-600">
-                      This field is required
-                    </span>
-                  )}
-                  {errors.email?.type === "validate" && (
-                    <span className="absolute -bottom-5 left-0 w-full text-sm text-red-600">
-                      Incorrect email
-                    </span>
-                  )}
+                  <span className="absolute -bottom-5 left-0 w-full text-sm text-red-600">
+                    {errors.email && errors.email.message}
+                  </span>
                 </div>
 
                 <div className="mb-6 relative">
                   <textarea
                     {...register("message", {
-                      required: true,
-                      maxLength: 1000,
+                      required: t("contact.form.message.required"),
+                      maxLength: { value: 1000, message: t("contact.form.message.maxLength") },
                     })}
                     rows="6"
                     placeholder="Your Message"
                     className="input resize-none"
                     maxLength={1000}
                   ></textarea>
-                  {errors.message?.type === "required" && (
-                    <span className="absolute -bottom-5 left-0 w-full text-sm text-red-600">
-                      This field is required
-                    </span>
-                  )}
-                  {errors.message?.type === "maxLength" && (
-                    <span className="absolute -bottom-5 left-0 w-full text-sm text-red-600">
-                      1000 characters max
-                    </span>
-                  )}
+                  <span className="absolute -bottom-5 left-0 w-full text-sm text-red-600">
+                    {errors.message && errors.message.message}
+                  </span>
                 </div>
                 <div>
                   <button disabled={isSubmitting} type="submit" className="btn w-full p-3">
-                    Send Message
+                    {t("contact.form.button")}
                   </button>
                 </div>
                 <Toaster position="top-center" reverseOrder={false} />

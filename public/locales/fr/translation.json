@@ -1,0 +1,99 @@
+{
+  "navbar": {
+    "home": "accueil",
+    "about": "à propos",
+    "career": "carrière",
+    "work": "projets",
+    "contact": "contact"
+  },
+  "home": {
+    "title": "Développeur Front-End",
+    "subtitle": "Un bon site web est beau de l'intérieur comme de l'extérieur !"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "paragraph": "Je suis un développeur web front-end, maîtrisant HTML, CSS et Javascript, ainsi que les bibliothèques et frameworks modernes, en particulier Bootstrap et React, mais explorant toujours d'autres technologies et frameworks qui attirent mon attention !<br /> Actuellement à l’écoute de nouvelles opportunités !"
+  },
+  "work": {
+    "title": "Projets Récents",
+    "subtitle": "Voici quelques projets sur lesquels j'ai travaillé récemment. Vous voulez en voir plus?",
+    "subtitle-link": "Contactez-moi",
+    "button": "Visiter",
+    "works": ["Météo", "Générateur de CSS", "Robot", "Portfolio"]
+  },
+  "career": {
+    "title": "Carrière",
+    "tabs": { "education": "éducation", "work": "expériences" },
+    "education": [
+      {
+        "title": "IT Learning",
+        "subtitle": "Casablanca",
+        "tag": "2021 - Présent",
+        "paragraph": "Master Universitaire Professionnel en Informatique Appliquée à la Gestion des Entreprises"
+      },
+      {
+        "title": "École Supérieure de Technologie",
+        "subtitle": "Casablanca",
+        "tag": "2020 - 2021",
+        "paragraph": "Licence Professionnelle Génie Logiciel et Administration Avancée des Systèmes et Réseaux Informatiques"
+      },
+      {
+        "title": "École Supérieure de Technologie",
+        "subtitle": "Casablanca",
+        "tag": "2018 - 2020",
+        "paragraph": "Diplôme Universitaire de Technologie en Génie Informatique"
+      },
+      {
+        "title": "Lycée Ben M'Sik",
+        "subtitle": "Casablanca",
+        "tag": "2017 - 2018",
+        "paragraph": "Bac International Sciences Mathématiques A Option Français"
+      }
+    ],
+    "work": [
+      {
+        "title": "Laboratoire RITM",
+        "subtitle": "Stage",
+        "tag": "Mai 2021 - 3 Mois",
+        "paragraph": "Site web d’inscription en licence professionnelle à l’ESTC.",
+        "tech": "Technologies: Django – Django Rest Framework – Python – React – Redux"
+      },
+      {
+        "title": "Cabilux",
+        "subtitle": "Stage",
+        "tag": "Avril 2020 - 3 Mois",
+        "paragraph": "Application web de gestion des ressources.",
+        "tech": "Technologies: Firebase – NodeJS – ExpressJS – Electron – React – Bootstrap – Redux"
+      },
+      {
+        "title": "Wikreate",
+        "subtitle": "Stage",
+        "tag": "Juin 2019 - 2 Mois",
+        "paragraph": "Site web d’actualités et de partage de contenu.",
+        "tech": "Technologies: Wordpress – PHP – Bootstrap"
+      }
+    ]
+  },
+  "contact": {
+    "title": "à l’écoute de nouvelles opportunités !",
+    "subtitle": "Contactez-moi",
+    "form": {
+      "name": {
+        "placeholder": "Votre Nom",
+        "required": "Ce champs est requis",
+        "maxLength": "30 charactères maximum"
+      },
+      "email": {
+        "placeholder": "Votre Email",
+        "required": "Ce champs est requis",
+        "validate": "Email invalide"
+      },
+      "message": {
+        "placeholder": "Votre Message",
+        "required": "Ce champs est requis",
+        "maxLength": "1000 charactères maximum"
+      },
+      "button": "Envoyer"
+    }
+  }
+}
