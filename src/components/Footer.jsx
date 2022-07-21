@@ -1,6 +1,8 @@
 import logo from "../assets/img/logo.webp";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="text-gray-600 bg-white drop-shadow-lg">
       <div className="container py-8 mx-auto flex items-center sm:flex-row flex-col">
@@ -11,11 +13,7 @@ export default function Footer() {
           © {new Date().getFullYear()} El Mehdi El Hamdi
         </p>
         <span className="gap-5 inline-flex text-lg font-black sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a
-            href="https://dl.dropboxusercontent.com/s/fe8xkedyi9fv5kj/CV%20El%20Mehdi%20El%20Hamdi.pdf"
-            download
-            className="w-5 h-5 flex justify-center items-center"
-          >
+          <a href={t("cv")} download className="w-5 h-5 flex justify-center items-center">
             <span className="leading-[0px]">CV</span>
           </a>
 
