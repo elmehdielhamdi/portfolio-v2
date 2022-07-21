@@ -1,15 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { HiOutlineBriefcase, HiOutlineAcademicCap } from "react-icons/hi";
 
-export default function Timeline({ item, type, position }) {
+export default function Timeline({ item, type, position, index }) {
+  const { t } = useTranslation();
   return (
     <div
       className={`pb-10 w-full flex ${
         position === "left" ? "justify-end pr-20" : "pl-10 lg:pl-20"
       }`}
     >
-      <div
-        className={`hidden lg:block w-1/2 ${position === "left" && "order-2"}`}
-      ></div>
+      <div className={`hidden lg:block w-1/2 ${position === "left" && "order-2"}`}></div>
       <div className={`${position === "left" && "order-1"} w-full lg:w-1/2`}>
         <span className="flex absolute -left-[12px] lg:left-[calc(50%-12px)] justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white">
           {type === "work" ? (
@@ -28,13 +28,9 @@ export default function Timeline({ item, type, position }) {
           <time className="block mb-2 text-sm font-normal leading-none text-gray-500">
             {item.subtitle}
           </time>
-          <p className="mb-4 text-base font-normal text-gray-500">
-            {item.paragraph}
-          </p>
+          <p className="mb-4 text-base font-normal text-gray-500">{item.paragraph}</p>
           {type === "work" && (
-            <p className="-mt-3 text-base font-normal text-gray-500">
-              {item.tech}
-            </p>
+            <p className="-mt-3 text-base font-normal text-gray-500">{item.tech}</p>
           )}
         </div>
       </div>

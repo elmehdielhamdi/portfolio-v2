@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import TechnologieTag from "./TechnologieTag";
 
 export default function WorkSmallCard({ work }) {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full sm:w-96 bg-white rounded-lg drop-shadow-md overflow-hidden">
       <img className="w-full border border-b" src={work.image} alt="" />
@@ -13,7 +16,7 @@ export default function WorkSmallCard({ work }) {
           ))}
         </p>
         <a href={work.link} target="_blank" rel="noreferrer" className="btn py-2 px-3">
-          Visit
+          {t("work.button")}
           <HiArrowNarrowRight className="ml-2 -mr-1 w-4 h-4" />
         </a>
       </div>
