@@ -8,8 +8,14 @@ const works = [
   {
     image: images.weather,
     title: "Weather App",
-    technologies: ["React", "Tailwind", "openweathermap"],
+    technologies: ["React", "Tailwind", "Openweathermap"],
     link: "https://weather.elmehdielhamdi.com",
+  },
+  {
+    image: images.notebook,
+    title: "Realtime Notebook App",
+    technologies: ["React", "Firebase", "Chakra UI"],
+    link: "https://notebook.elmehdielhamdi.com",
   },
   {
     image: images.cssGenerator,

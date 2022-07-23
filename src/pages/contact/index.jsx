@@ -84,7 +84,7 @@ export default function Contact() {
                       maxLength: { value: 1000, message: t("contact.form.message.maxLength") },
                     })}
                     rows="6"
-                    placeholder="Your Message"
+                    placeholder={t("contact.form.message.placeholder")}
                     className="input resize-none"
                     maxLength={1000}
                   ></textarea>
