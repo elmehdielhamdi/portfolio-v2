@@ -21,8 +21,9 @@ export default function LanguageSelector() {
             lng === language && "!opacity-100 !shadow-lg cursor-default"
           }`}
           onClick={() => onChangeLanguage(language)}
+          aria-label={language}
         >
-          <img src={flags[language]} className="w-6 h-[18px] rounded" />
+          <img src={flags[language]} alt={language} className="w-6 h-[18px] rounded" />
         </button>
       ))}
     </div>
