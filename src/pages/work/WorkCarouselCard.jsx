@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 
 export default function WorkCarouselCard({ work, index }) {
   const { t } = useTranslation();
-  console.log(`work.works.${index}`);
   return (
     <div className="relative md:w-fit overflow-hidden rounded-xl mx-6 my-2 drop-shadow-md group">
       <img src={work.image} alt="" className="inset-0 md:h-[310px] lg:h-[340px] xl:h-[370px] " />
