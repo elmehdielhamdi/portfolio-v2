@@ -8,8 +8,8 @@ i18n
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    supportedLngs: ["en", "fr"],
-    fallbackLng: "en",
+    supportedLngs: ["fr", "en"],
+    fallbackLng: "fr",
     interpolation: {
       escapeValue: false,
     },
