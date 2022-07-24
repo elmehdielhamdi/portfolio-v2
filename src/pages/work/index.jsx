@@ -79,8 +79,8 @@ export default function Work() {
       </div>
       <div className="container p-0 max-w-[2000px] mx-auto">
         <div className="flex justify-center gap-x-2 mb-2">
-          <Arrow icon={<FaChevronLeft />} onClick={previous} className="hover:-translate-x-1" />
-          <Arrow icon={<FaChevronRight />} onClick={next} className="hover:translate-x-1" />
+          <Arrow icon={<FaChevronLeft />} onClick={previous} direction="left" />
+          <Arrow icon={<FaChevronRight />} onClick={next} direction="right" />
         </div>
         <Slider
           className="hidden md:block hover:cursor-grab active:cursor-grabbing"
@@ -103,11 +103,14 @@ export default function Work() {
   );
 }
 
-function Arrow({ icon, onClick, className }) {
+function Arrow({ icon, onClick, direction }) {
   return (
     <button
-      className={`p-4 transition-all shadow hover:shadow-xl rounded-full active:shadow ${className}`}
+      className={`p-4 transition-all shadow hover:shadow-xl rounded-full active:shadow ${
+        direction === "left" ? "hover:-translate-x-1" : "hover:translate-x-1"
+      }`}
       onClick={onClick}
+      aria-label={`arrow-${direction}`}
     >
       {icon}
     </button>
