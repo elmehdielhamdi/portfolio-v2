@@ -34,14 +34,11 @@
       {
         "title": "Higher School Of Technology",
         "subtitle": "Casablanca",
-        "tag": "2020 - 2021",
-        "paragraph": "Professional License in Software Engineering and Advanced Administration of Computer Systems and Networks"
-      },
-      {
-        "title": "Higher School Of Technology",
-        "subtitle": "Casablanca",
-        "tag": "2018 - 2020",
-        "paragraph": "University Diploma of Technology in Computer Engineering"
+        "tag": "2018 - 2021",
+        "paragraph": [
+          "Professional License in Software Engineering and Advanced Administration of Computer Systems and Networks",
+          "University Diploma of Technology in Computer Engineering"
+        ]
       },
       {
         "title": "High School Ben M'Sik",
@@ -52,22 +49,29 @@
     ],
     "work": [
       {
+        "title": "Lacaisse.ma",
+        "subtitle": "Permanent Contract - Full Stack Web Developer",
+        "tag": "August 2022 - Present",
+        "paragraph": "Maintenance and development of new features for the back office of lacaisse.ma",
+        "tech": "Technologies: React – NodeJS – ExpressJS – mysql"
+      },
+      {
         "title": "Laboratoire RITM",
-        "subtitle": "Internship",
+        "subtitle": "Internship - Full Stack Web Developer",
         "tag": "May 2021 - 3 Months",
         "paragraph": "Registration website for professional license at ESTC.",
-        "tech": "Technologies: Django – Django Rest Framework – Python – React – Redux"
+        "tech": "Technologies: React – Redux Django – Django Rest Framework – Python"
       },
       {
         "title": "Cabilux",
-        "subtitle": "Internship",
+        "subtitle": "Internship - Full Stack Web Developer",
         "tag": "April 2020 - 3 Months",
         "paragraph": "Resource management application.",
         "tech": "Technologies: Firebase – NodeJS – ExpressJS – Electron – React – Bootstrap – Redux"
       },
       {
         "title": "Wikreate",
-        "subtitle": "Internship",
+        "subtitle": "Internship - Wordpress Developer",
         "tag": "June 2019 - 2 Months",
         "paragraph": "News and content sharing website.",
         "tech": "Technologies: Wordpress – PHP – Bootstrap"
