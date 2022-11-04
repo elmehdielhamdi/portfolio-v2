@@ -34,14 +34,11 @@
       {
         "title": "École Supérieure de Technologie",
         "subtitle": "Casablanca",
-        "tag": "2020 - 2021",
-        "paragraph": "Licence Professionnelle Génie Logiciel et Administration Avancée des Systèmes et Réseaux Informatiques"
-      },
-      {
-        "title": "École Supérieure de Technologie",
-        "subtitle": "Casablanca",
-        "tag": "2018 - 2020",
-        "paragraph": "Diplôme Universitaire de Technologie en Génie Informatique"
+        "tag": "2018 - 2021",
+        "paragraph": [
+          "Licence Professionnelle Génie Logiciel et Administration Avancée des Systèmes et Réseaux Informatiques",
+          "Diplôme Universitaire de Technologie en Génie Informatique"
+        ]
       },
       {
         "title": "Lycée Ben M'Sik",
@@ -51,6 +48,13 @@
       }
     ],
     "work": [
+      {
+        "title": "Lacaisse.ma",
+        "subtitle": "CDI - Développeur Web Full Stack",
+        "tag": "Août 2022 - Présent",
+        "paragraph": "Maintenance et développement de nouvelles fonctionnalités pour le back office de lacaisse.ma",
+        "tech": "Technologies: React – NodeJS – ExpressJS – mysql"
+      },
       {
         "title": "Laboratoire RITM",
         "subtitle": "Stage",
