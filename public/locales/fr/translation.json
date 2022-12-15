@@ -23,7 +23,7 @@
   },
   "career": {
     "title": "Carrière",
-    "tabs": { "education": "éducation", "work": "expérience" },
+    "tabs": { "education": "éducation", "work": "expériences" },
     "education": [
       {
         "title": "FST Settat",
