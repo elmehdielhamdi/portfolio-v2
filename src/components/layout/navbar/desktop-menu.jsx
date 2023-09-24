@@ -1,4 +1,4 @@
-import { LanguageSelector } from "../LanguageSelector";
+import { LanguageSelector } from "./language-selector";
 import { useTranslation } from "react-i18next";
 
 export const DesktopMenu = () => {

@@ -1,8 +1,8 @@
-import { LanguageSelector } from "../LanguageSelector";
+import { LanguageSelector } from "./language-selector";
 import { useBoolean } from "usehooks-ts";
 import { MobileMenu, MobileMenuButton } from "./mobile-menu";
 import { DesktopMenu } from "./desktop-menu";
-import { Logo } from "../logo";
+import { Logo } from "../../logo";
 
 export const Navbar = () => {
   const open = useBoolean(false);

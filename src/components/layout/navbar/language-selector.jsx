@@ -1,4 +1,4 @@
-import * as flags from "../assets/img/flags/";
+import * as flags from "../../../assets/img/flags";
 import { useState } from "react";
 import i18next from "i18next";
 import cookies from "js-cookie";
