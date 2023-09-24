@@ -1,8 +1,8 @@
-import TechnologieTag from "./TechnologieTag";
+import { TechnologieTag } from "./TechnologieTag";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
 
-export default function WorkCarouselCard({ work, index }) {
+export const WorkCarouselCard = ({ work, index }) => {
   const { t } = useTranslation();
   return (
     <div className="relative md:w-fit overflow-hidden rounded-xl mx-6 my-2 drop-shadow-md group">
@@ -30,4 +30,4 @@ export default function WorkCarouselCard({ work, index }) {
       </div>
     </div>
   );
-}
+};

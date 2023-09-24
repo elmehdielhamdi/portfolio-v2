@@ -1,6 +1,6 @@
-import WorkCarouselCard from "../components/sections/work/WorkCarouselCard";
+import { WorkCarouselCard } from "./sections/work/WorkCarouselCard";
 import Slider from "react-slick";
-import WorkSmallCard from "../components/sections/work/WorkSmallCard";
+import { WorkSmallCard } from "./sections/work/WorkSmallCard";
 import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useRef } from "react";
