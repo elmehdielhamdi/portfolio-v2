@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { TechnologieTag } from "./TechnologieTag";
+import { TechnologieTag } from "./technologie-tag";
 
 export const WorkSmallCard = ({ work }) => {
   const { t } = useTranslation();
