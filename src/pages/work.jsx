@@ -2,8 +2,7 @@ import { useRef } from "react";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { WorkSmallCard } from "./sections/work/work-small-card";
-import { WorkCarouselCard } from "./sections/work/work-carousel-card";
+import { WorkSmallCard, WorkCarouselCard } from "./sections/work";
 
 const works = [
   {

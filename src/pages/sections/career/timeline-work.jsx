@@ -1,6 +1,6 @@
 import { HiOutlineBriefcase } from "react-icons/hi";
 
-export default function TimelineWork({ item, index }) {
+export const TimelineWork = ({ item, index }) => {
   return (
     <div
       className={`pb-10 w-full flex ${index % 2 !== 0 ? "justify-end pr-20" : "pl-10 lg:pl-20"}`}
@@ -27,4 +27,4 @@ export default function TimelineWork({ item, index }) {
       </div>
     </div>
   );
-}
+};
