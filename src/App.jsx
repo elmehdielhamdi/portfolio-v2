@@ -1,6 +1,7 @@
 import { Footer, Navbar, Wrapper } from "./components";
 import { Home, About, Work, Career, Contact } from "./pages";
-function App() {
+
+export default function App() {
   return (
     <>
       <Navbar />
@@ -17,5 +18,3 @@ function App() {
     </>
   );
 }
-
-export default App;

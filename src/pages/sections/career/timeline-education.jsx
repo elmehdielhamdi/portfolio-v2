@@ -1,9 +1,6 @@
 import { HiOutlineAcademicCap } from "react-icons/hi";
 
-// pb-10 w-full flex pl-10 lg:pl-20
-// pb-10 w-full flex justify-end pr-20
-
-export default function TimelineEducation({ item, index }) {
+export const TimelineEducation = ({ item, index }) => {
   return (
     <div
       className={`pb-10 w-full flex ${index % 2 !== 0 ? "justify-end pr-20" : "pl-10 lg:pl-20"}`}
@@ -36,4 +33,4 @@ export default function TimelineEducation({ item, index }) {
       </div>
     </div>
   );
-}
+};

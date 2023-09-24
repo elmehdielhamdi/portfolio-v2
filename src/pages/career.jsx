@@ -2,8 +2,7 @@ import { useState } from "react";
 import { HiOutlineAcademicCap, HiOutlineBriefcase } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
 
-import TimelineEducation from "./sections/career/timeline-education";
-import TimelineWork from "./sections/career/timeline-work";
+import { TimelineEducation, TimelineWork } from "./sections/career";
 
 export default function Career() {
   const { t } = useTranslation();
