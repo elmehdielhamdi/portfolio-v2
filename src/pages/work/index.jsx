@@ -78,7 +78,7 @@ export default function Work() {
         </p>
       </div>
       <div className="container p-0 max-w-[2000px] mx-auto">
-        <div className="flex justify-center gap-x-2 mb-2">
+        <div className="hidden md:flex justify-center gap-x-2 mb-2">
           <Arrow icon={<FaChevronLeft />} onClick={previous} direction="left" />
           <Arrow icon={<FaChevronRight />} onClick={next} direction="right" />
         </div>
