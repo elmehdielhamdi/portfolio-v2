@@ -1,4 +1,4 @@
-import { TechnologieTag } from "./TechnologieTag";
+import { TechnologieTag } from "./technologie-tag";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
 
