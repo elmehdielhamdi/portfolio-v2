@@ -1,9 +1,9 @@
-import { WorkCarouselCard } from "./sections/work/work-carousel-card";
+import { useRef } from "react";
 import Slider from "react-slick";
-import { WorkSmallCard } from "./sections/work/work-small-card";
 import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { useRef } from "react";
+import { WorkSmallCard } from "./sections/work/work-small-card";
+import { WorkCarouselCard } from "./sections/work/work-carousel-card";
 
 const works = [
   {
@@ -56,14 +56,9 @@ export default function Work() {
     arrows: false,
   };
 
-  const previous = () => {
-    ref.current.slickPrev();
-  };
+  const previous = () => ref.current.slickPrev();
 
-  const next = () => {
-    ref.current.slickNext();
-  };
-
+  const next = () => ref.current.slickNext();
   return (
     <section className="min-h-screen flex justify-center flex-col">
       <div className="container mb-0 md:mb-8">
