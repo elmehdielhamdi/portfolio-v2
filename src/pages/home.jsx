@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import photo from "../../assets/img/photo.webp";
+import photo from "../assets/img/photo.webp";
 
 export default function Index() {
   const { t } = useTranslation();

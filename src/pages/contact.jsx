@@ -1,4 +1,4 @@
-import contact from "../../assets/img/contact.webp";
+import contact from "../assets/img/contact.webp";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { validate } from "email-validator";
@@ -10,7 +10,6 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
-
     formState: { errors, isSubmitting },
     reset,
   } = useForm();
@@ -23,9 +22,7 @@ export default function Contact() {
           "#form",
           process.env.REACT_APP_EMAIL_PUBLIC_KEY
         )
-        .then(() => {
-          reset();
-        }),
+        .then(() => reset()),
       {
         loading: "Sending...",
         success: <b>Message sent!</b>,
