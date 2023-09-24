@@ -1,10 +1,10 @@
-import Sidenav from "./Sidenav";
+import { Sidenav } from "./sidenav";
 
-export default function Wrapper({ children, active }) {
+export const Wrapper = ({ children, active }) => {
   return (
     <div className="relative" id={active}>
       {active !== "home" && <Sidenav active={active} />}
       {children}
     </div>
   );
-}
+};

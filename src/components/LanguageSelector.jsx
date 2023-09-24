@@ -5,7 +5,7 @@ import cookies from "js-cookie";
 
 const languages = ["fr", "en"];
 
-export default function LanguageSelector() {
+export const LanguageSelector = () => {
   const currentLanguage = cookies.get("i18next") || "en";
   const [lng, setLng] = useState(currentLanguage);
   const onChangeLanguage = (lng) => {
@@ -28,4 +28,4 @@ export default function LanguageSelector() {
       ))}
     </div>
   );
-}
+};
