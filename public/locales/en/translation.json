@@ -28,7 +28,7 @@
       {
         "title": "FST Settat",
         "subtitle": "Casablanca",
-        "tag": "2021 - Present",
+        "tag": "2021 - 2023",
         "paragraph": "Professional University Master's Degree in Application Design and Development Engineering"
       },
       {
@@ -49,9 +49,15 @@
     ],
     "work": [
       {
+        "title": "NodifyIT",
+        "subtitle": "Full Stack Web Developer",
+        "tag": "May 2023 - Present",
+        "tech": "Technologies: React – Laravel – mysql"
+      },
+      {
         "title": "Lacaisse.ma",
-        "subtitle": "Permanent Contract - Full Stack Web Developer",
-        "tag": "August 2022 - Present",
+        "subtitle": "Full Stack Web Developer",
+        "tag": "August 2022 - November 2022",
         "paragraph": "Maintenance and development of new features for the back office of lacaisse.ma",
         "tech": "Technologies: React – NodeJS – ExpressJS – mysql"
       },

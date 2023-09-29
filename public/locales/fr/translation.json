@@ -28,7 +28,7 @@
       {
         "title": "FST Settat",
         "subtitle": "Casablanca",
-        "tag": "2021 - Présent",
+        "tag": "2021 - 2023",
         "paragraph": "Master Universitaire Professionnel en Ingénierie de Conception et de Développement d’applications"
       },
       {
@@ -49,11 +49,17 @@
     ],
     "work": [
       {
+        "title": "NodifyIT",
+        "subtitle": "Développeur Web Full Stack",
+        "tag": "Mai 2023 - Présent",
+        "tech": "Technologies: React – Laravel - MySQL"
+      },
+      {
         "title": "Lacaisse.ma",
-        "subtitle": "CDI - Développeur Web Full Stack",
-        "tag": "Août 2022 - Présent",
+        "subtitle": "Développeur Web Full Stack",
+        "tag": "Août 2022 - Novembre 2022",
         "paragraph": "Maintenance et développement de nouvelles fonctionnalités pour le back office de lacaisse.ma",
-        "tech": "Technologies: React – NodeJS – ExpressJS – mysql"
+        "tech": "Technologies: React – NodeJS – ExpressJS – MySQL"
       },
       {
         "title": "Laboratoire RITM",
