@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { FaGithub } from "react-icons/fa";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { TechnologieTag } from "./technologie-tag";
 
@@ -15,10 +16,23 @@ export const WorkSmallCard = ({ work }) => {
             <TechnologieTag text={tech} key={i} />
           ))}
         </p>
-        <a href={work.link} target="_blank" rel="noreferrer" className="btn py-2 px-3">
-          {t("work.button")}
-          <HiArrowNarrowRight className="ml-2 -mr-1 w-4 h-4" />
-        </a>
+        <div className="flex items-center gap-2">
+          {work.github && (
+            <a
+              href={work.github}
+              target="_blank"
+              rel="noreferrer"
+              className="btn py-2 px-3 bg-gray-200 text-black hover:bg-gray-300 focus:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-200"
+            >
+              {t("work.github-button")}
+              <FaGithub className="ml-2 -mr-1 w-4 h-4" />
+            </a>
+          )}
+          <a href={work.link} target="_blank" rel="noreferrer" className="btn py-2 px-3">
+            {t("work.button")}
+            <HiArrowNarrowRight className="ml-2 -mr-1 w-4 h-4" />
+          </a>
+        </div>
       </div>
     </div>
   );

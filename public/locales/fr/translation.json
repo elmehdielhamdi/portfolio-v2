@@ -19,6 +19,7 @@
     "subtitle": "Voici quelques projets sur lesquels j'ai travaillé récemment. Vous voulez en voir plus?",
     "subtitle-link": "Contactez-moi",
     "button": "Visiter",
+    "github-button": "GitHub",
     "works": ["Météo", "Bloc-notes en temps réel", "Générateur de CSS", "Robot", "Portfolio"]
   },
   "career": {

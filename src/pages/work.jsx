@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { WorkSmallCard, WorkCarouselCard } from "./sections/work";
+import Slider from "react-slick";
+import { WorkCarouselCard, WorkSmallCard } from "./sections/work";
 
 const works = [
   {
@@ -39,6 +39,7 @@ const works = [
     title: "Portfolio",
     technologies: ["React", "Tailwind CSS", "Spline.design", "i18next"],
     link: "https://elmehdielhamdi.com",
+    github: "https://github.com/elmehdielhamdi/portfolio-v2",
   },
 ];
 

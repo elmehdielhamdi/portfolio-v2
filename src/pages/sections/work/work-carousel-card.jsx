@@ -1,6 +1,7 @@
-import { TechnologieTag } from "./technologie-tag";
-import { HiArrowNarrowRight } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
+import { FaGithub } from "react-icons/fa";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { TechnologieTag } from "./technologie-tag";
 
 export const WorkCarouselCard = ({ work, index }) => {
   const { t } = useTranslation();
@@ -17,15 +18,28 @@ export const WorkCarouselCard = ({ work, index }) => {
               <TechnologieTag text={tech} key={i} />
             ))}
           </p>
-          <a
-            href={work.link}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-auto inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 "
-          >
-            {t("work.button")}
-            <HiArrowNarrowRight className="ml-2 -mr-1 w-4 h-4" />
-          </a>
+          <div className="flex items-center gap-2 mt-auto">
+            {work.github && (
+              <a
+                href={work.link}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-black bg-gray-200 rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-200 "
+              >
+                {t("work.github-button")}
+                <FaGithub className="ml-2 -mr-1 w-4 h-4" />
+              </a>
+            )}
+            <a
+              href={work.link}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 "
+            >
+              {t("work.button")}
+              <HiArrowNarrowRight className="ml-2 -mr-1 w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
