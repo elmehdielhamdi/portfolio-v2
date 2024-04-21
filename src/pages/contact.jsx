@@ -1,9 +1,9 @@
-import contact from "../assets/img/contact.webp";
 import emailjs from "@emailjs/browser";
-import { useForm } from "react-hook-form";
 import { validate } from "email-validator";
+import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
+import contact from "../assets/img/contact.webp";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -13,8 +13,8 @@ export default function Contact() {
     formState: { errors, isSubmitting },
     reset,
   } = useForm();
-  const onSubmit = () => {
-    toast.promise(
+  const onSubmit = async () => {
+    await toast.promise(
       emailjs
         .sendForm(
           process.env.REACT_APP_EMAIL_SERVICE_ID,
@@ -30,6 +30,7 @@ export default function Contact() {
       }
     );
   };
+
   return (
     <section className="relative min-h-screen flex items-center">
       <div className="container">
